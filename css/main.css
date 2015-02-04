@@ -1,0 +1,588 @@
+/*
+  ========================================
+  RESET
+  ========================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+	font: 300 20px/26px "Roboto";
+	color: white;
+}
+html, body {
+	height: 100%;
+}
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+.grid {
+	width: 920px;
+	height: 552px;
+	background: red;
+	display: block;
+	margin: 45px auto;
+	overflow: hidden;
+	background: transparent;
+}
+.extended-grid {
+	height: 736px;
+}
+.column-1, .column-2, .column-3 {
+	height: 100%;
+	display: inline-block;
+}
+.column-1 {
+	width: 276px;
+}
+.column-2 {
+	width: 368px;
+}
+.column-3 {
+	width: 276px;
+}
+.contact {
+	position: relative;
+	bottom: 0;
+	right: -92px;
+}
+.tile {
+	min-height: 90px;
+	min-width: 90px;
+	background: #003399;
+	display: table;
+	float: left;
+	margin: 1px;
+	vertical-align: top;
+	text-align: center;
+	overflow:hidden;
+	position: relative;
+	opacity: 0;
+}
+.tile-large-2 {
+	width: 182px;
+}
+.tile-large-3 {
+	width: 274px;
+}
+.tile-large-4 {
+	width: 366px;
+}
+.tile-large-5 {
+	width: 458px;
+}
+.tile-high-2 {
+	height: 182px;
+}
+.tile-high-3 {
+	height: 274px;
+}
+.tile-high-4 {
+	height: 366px;
+}
+.float-right {
+	float: right;
+}
+.transparent {
+	background: transparent;
+}
+.clear {
+	clear: both;
+}
+.button:active {
+	vertical-align: middle;
+	transform: scale(.97);
+}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+span {
+	display: table-cell;
+	vertical-align: middle;
+}
+a {
+	color: white;
+}
+a:active div {
+	
+}
+.contact-data {
+	font-size: 16px;
+	padding-top: 15px;
+}
+.normal {
+	padding-top: 30px;
+}
+/*
+  ========================================
+  About
+  ========================================
+*/
+
+.about-column {
+	width: 460px;
+	display: inline-block;
+	height: 100%;
+}
+.move-down {
+	position: relative;
+	top: 92px;
+}
+.about-me {
+	padding: 10px;
+	text-align: justify;
+	font-size: 15px;
+	font-weight: 300;
+	color: white;
+}
+.move-left {
+	position: relative;
+	right: 92px;
+}
+.photo {
+	background-image: url('../img/Thomas-Kalmus.jpg');
+	background-size: 100%;
+}
+.about-style-1 {
+	background: #00005C;
+}
+.about-style-2 {
+	background: #ADC2FF;
+}
+.about-style-3 {
+	background: #142966;
+}
+.about-back {
+	background: #B2B2B2;
+}
+.about-txt {
+	background: #3366FF;
+}
+/*
+  ========================================
+  Skills
+  ========================================
+*/
+
+.skills {
+	font-size: 16px;
+}
+.move-up {
+	position: relative;
+	bottom: 92px;
+}
+.skills-back-style {
+	background: #B2B2B2;
+}
+.objective-C-style {
+	background: #2952CC;
+}
+.cpp-style {
+	background: #00245A;
+}
+.c-sharp {
+	background: #246BB2;
+}
+.java {
+	background: #0000B2;
+}
+.javascript {
+	background: #4C4C95;
+}
+.python {
+	background: #353587;
+}
+.sql {
+	background: #0052A3;
+}
+.html-css {
+	background: #1A4C80;
+}
+.english {
+	background: #2EB8E6;
+}
+.french {
+	background: #1975FF;
+}
+.polish {
+	background: #0099FF;
+}
+.german {
+	background: #94BFFF;
+}
+.problem-solving {
+	background: #7A297A;
+}
+.organized {
+	background: #A269A2;
+}
+.quick-learner {
+	background: #C7A5C7;
+}
+.eye-details {
+	background: #AD5CAD;
+}
+
+/*
+  ========================================
+  Timeline
+  ========================================
+*/
+
+.tile-large-8 {
+	width: 736px;
+	z-index: -100;
+	overflow: hidden;
+	padding: 30px;
+	background: #3D003D;
+}
+.move-up-2 {
+	position: relative;
+	bottom: 184px;	
+	z-index: -110;
+}
+.timeline-style-1 {
+	background: #835C83;
+}
+.timeline-header-style {
+	background: #333385;
+}
+
+/*
+  ========================================
+  Education
+  ========================================
+*/
+.education-box,
+.experience-box {
+	position: relative;
+	display: inline-block;
+	height: 80px;
+	font-family: sans-serif;
+	font-size: 12px;
+	text-align: left;
+	line-height: 1.4em;
+	background: transparent;
+	margin: 80px 0 30px 0;
+	top: 20px;
+	float : left;
+	color: white;
+}
+.experience-box {
+	margin-bottom: -50px;
+}
+.education-box-1 {
+	width: 31%;
+}
+.education-box-2 {
+	top: 5px;
+	width: 41%;
+}
+.education-box-3 {
+	top: -10px;
+	width: 15%;
+}
+.experience-box-1 {
+	clear: both;
+	width:20%;
+	top: -60px;
+	left: 10px;
+}
+.experience-box-2 {
+	width: 20%;
+	top: -76px;
+	left: 285px;
+}
+.education-content {
+	position: absolute;
+	width: 240px;
+	bottom: 25%;
+}
+.experience-content {
+	top: 10%;
+	position: absolute;
+	width: 151px;
+}
+.spec {
+	font-style: italic;
+}
+.date {
+	color: #CACAD4;
+	font-size: 12px;
+}
+.underline,
+.overline {
+	content: "";
+	display: block;
+	background: transparent;
+	border-radius: 10px;
+	height: 10px;
+	position: absolute;
+	box-shadow: 0 12px 0 0;
+}
+.underline {
+	bottom: 0;
+	width: 100%;
+}
+.underline-1 {
+	right: 0;
+	width:150%;
+}
+.underline-2  {
+	width: 100%;
+}
+.underline-3 {
+	width: 220%;
+}
+.overline {
+	top: -24px;
+}
+.overline-length {
+	width: 30px;
+}
+.overline-3, .overline-4 {
+	top: -24px;
+}
+.overline-3 {
+	left: 80px;
+}
+.overline-4 {
+	left: 150px;
+}
+.overline-level-2{
+	top: -40px;
+}
+.overline-5 {
+	left: 220px;
+}
+.overline-6 {
+	left: 285px;
+}
+.overline-7 {
+	left: 350px;
+}
+.overline-8 {
+	width: 15px;
+	left: 440px;
+}
+/*	Underline and Overline of same color as institution name */
+.education-box-1 h3, .education-box-1 .underline {
+	color: #FF1919;
+}
+.education-box-2 h3, .education-box-2 .underline {
+	color: #0099FF;
+}
+.education-box-3 h3, .education-box-3 .underline {
+	color: #2EB82E;
+}
+.experience-box-1 h3, .experience-box-1 .overline {
+	color: #FFCC00;
+}
+.experience-box-2 h3, .experience-box-2 .overline {
+	color: #2162A3;
+}
+
+/* years down of page */
+.years {
+	position: absolute;
+	bottom: 3%;
+	color: #FFF;
+	font-size: 14px;
+}
+.years li {
+	display: inline-block;
+	position: relative;
+	margin: 0 52px;
+}
+.years li:after {
+	content: "";
+	height: 0;
+	width: 95px;
+	border-top: 1px solid #FFF;
+	position: absolute;
+	top: 50%;
+	left: 38px;
+}
+.years li:first-of-type:before {
+	content: "";
+	width: 80px;
+	height: 0;
+	border-top: 1px solid #FFF;
+	position: absolute;
+	top: 50%;
+	right: 38px;
+	color: inherit;
+}
+.years li:last-of-type:after {
+	width: 80px;
+	color: #FFF;
+}
+
+/*
+  ========================================
+  Portfolio
+  ========================================
+*/
+
+.portfolio {
+	width: 1104px;
+}
+.desc {
+	font-size: 14px;
+	padding: 5px;
+}
+.portfolio-back {
+	background: #8F8F8F;
+}
+.slideInRight span, 
+.slideInUp span, 
+.slideInDown span,
+.slideInLeft span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	transition: all .3s ease;
+	display: table-cell;
+	vertical-align: middle;
+}
+.slideInLeft span:nth-child(2){
+	left: 100%;
+}
+.slideInLeft:hover span {
+	transform: translateX(-100%);
+}
+.slideInRight span:nth-child(2){
+	left: -100%;
+}
+.slideInRight:hover span {
+	transform: translateX(100%);
+}
+.slideInUp span:nth-child(2){
+	top: 100%;
+}
+.slideInUp:hover span {
+	transform: translateY(-100%);
+}
+.slideInDown span:nth-child(2){
+	top: -100%;
+}
+.slideInDown:hover span {
+	transform: translateY(100%);
+}
+.network {
+	padding-top: 80px;
+}
+.IMS {
+	padding-top: 80px;
+}
+.ios-game {
+	padding-top: 80px;
+}
+.bot {
+	padding-top: 80px;
+}
+.p2p {
+	padding-top: 60px;
+}
+
+/*
+  ========================================
+  Headers
+  ========================================
+*/
+
+.skills-header {
+	background: #3333CC;
+}
+.timeline-header {
+	background: #252570;
+}
+.contact-header {
+	background: #3366FF;
+}
+.main-header {
+	background: #EEE;
+	color: black;
+	font-size: 30px;
+}
+.about-header {
+	background: #3059AC;
+}
+.portfolio-header {
+	background: #123375;
+}
+.style-1 {
+	background: #944DDB;
+}
+.style-2 {
+	background: #751975;
+}
