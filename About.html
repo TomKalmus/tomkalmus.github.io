@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Thomas Kalmus</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- About me -->
+		
+		<div class="grid">
+			<section class="about-column">
+				<div class="tile tile-large-2 tile-high-2">
+					<span>About Me</span>
+				</div>
+				<div class="tile transparent"></div>
+				<div class="tile tile-large-2 tile-high-2 photo">
+				</div>
+				<div class="tile move-right about-style-1"></div>
+				<div class="tile tile-large-4 transparent"></div>
+				<div class="tile transparent"></div>
+				<div class="tile tile-large-2 tile-high-2 about-style-2"></div>
+				<div class="tile float-right clear about-style-3"></div>
+			</section><!--
+			
+			--><section class="about-column">
+				<div class="tile tile-large-4 transparent"></div>
+				<a href="index.html">
+					<div class="tile about-back button">
+						<span>Back</span>
+					</div>
+				</a>
+				<div class="tile tile-large-4 tile-high-4 about-txt">
+					<span class="about-me">
+						I'm Thomas Kalmus and currently I'm a master student at DTU in Denmark.
+						I was born in France and lived there until my studies. Then I moved to Poland
+						for my bachelor studies at Warsaw University of Technology in the Electronics and Information 
+				  	Technology faculty. I'm interested in software engineering as well as wireless technologies 
+						(wires drive me mad). Beside this, I'm an ambitious person, who's always competing with
+						the best and a cleaning maniac. Interested in sports (only interesting thing in TV),
+						especially snooker - it's really mind stimulating.
+					</span>
+				</div>
+				<div class="tile tile-high-4 transparent"></div>
+			</section>
+		</div>	
+		<script>
+			$(function() {
+				$('.tile').each(function(i) {
+				$(this).delay((i++) * 100).fadeTo(500, 1); })
+			});
+		</script>
+	</body>
+</html>
